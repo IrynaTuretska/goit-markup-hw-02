@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -17,32 +17,25 @@
 
   <body>
     <!--HEADER-->
-    <header class="header">
+    <header class="header-background">
       <nav class="navigation">
         <a
           class="link"
-          href="WedStudio"
           aria-label="Надпись-ссыдка WebStudio"
           href="./index.html"
           target="_blank"
-          ></a><span class="logo-web-part">Web</span
+          ><span class="logo-web-part">Web</span
           ><span class="logo-studio-part">Studio</span></a
         >
-        <ul class="navigation-link-list">
-          <li class="navigation-link-item">
-            <a class="navigation-list-item-link" href="" target="_blank"
-              >Студия</a
-            >
+        <ul class="site-nav list">
+          <li>
+            <a href="" class="link current" target="_blank">Студия</a>
           </li>
-          <li class="navigation-link-item">
-            <a class="navigation-list-item-link" href="./portfolio.html" target="_blank"
-              >Портфолио</a
-            >
+          <li>
+            <a href="./portfolio.html" class="link">Портфолио</a>
           </li>
-          <li class="navigation-link-item">
-            <a class="navigation-list-item-link" href="" target="_blank"
-              >Контакты</a
-            >
+          <li>
+            <a href="" class="link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -64,13 +57,13 @@
 
     <main>
       <!--HERO-->
-      <section>
+      <section class="hero-background">
         <h1 class="hero" lang="ru">Эффективные решения для вашего бизнеса</h1>
         <button class="modal-button" type="button">Заказать услугу</button>
       </section>
 
       <!--ADVANTAGES-->
-      <section>
+      <section class="duties-background">
         <h2 hidden>Преимущества перед другими студиями</h2>
         <ul>
           <li>
@@ -136,22 +129,23 @@
       </section>
 
       <!--OUR TEAM-->
-      <section>
+      <section class="team-section-background">
         <h2 class="team" lang="ru">Наша команда</h2>
         <ul>
           <li>
-            <img class="team-member-photo-1"
+            <img
+              class="team-member-photo-1"
               src="./images/team/igor.jpg"
               alt="Игорь Демьяненко"
               width="270"
               height="260"
             />
-            <h3 class="team-member-name" lang="ru"
-            >Игорь Демьяненко</h3>
+            <h3 class="team-member-name" lang="ru">Игорь Демьяненко</h3>
             <p class="tem-member-position" lang="en">Product Designer</p>
           </li>
           <li>
-            <img class="team-member-photo-2"
+            <img
+              class="team-member-photo-2"
               src="./images/team/olga.jpg"
               alt="Ольга Репина"
               width="270"
@@ -161,7 +155,8 @@
             <p class="tem-member-position" lang="en">Frontend Developer</p>
           </li>
           <li>
-            <img class="team-member-photo-3"
+            <img
+              class="team-member-photo-3"
               src="./images/team/nikolai.jpg"
               alt="Николай Тарасов"
               width="270"
@@ -172,7 +167,8 @@
           </li>
 
           <li>
-            <img class="team-member-photo-4"
+            <img
+              class="team-member-photo-4"
               src="./images/team/michail.jpg"
               alt="Михаил Ермаков"
               width="270"
@@ -186,22 +182,35 @@
     </main>
 
     <!--CONTACT INFORMATION-->
-    <footer>
+    <footer class="footer-background">
       <div>
-      <a class="link" href="WedStudio" aria-label="Надпись-ссыдка WebStudio" href="" target="_blank"></a><span
-        class="logo-web-part">Web</span><span class="logo-studio-part">Studio</span></a>
+        <a
+          class="link"
+          aria-label="Надпись-ссыдка WebStudio"
+          href=""
+          target="_blank"
+          ><span class="logo-web-part">Web</span
+          ><span class="logo-studio-part-footer">Studio</span></a
+        >
         <address>
           <ul>
             <li>
-              <a class="address-link" href="https://goo.gl/maps/g1FQT9MvJtLryNQb6" target="_blank"
+              <a
+                class="address-footer-link"
+                href="https://goo.gl/maps/g1FQT9MvJtLryNQb6"
+                target="_blank"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
             <li>
-              <a class="contact-link" href="mailto:info@example.com">info@example.com</a>
+              <a class="contact-link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
             <li>
-              <a class="contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <a class="contact-tel" href="telink:+380991111111"
+                >+38 099 111 11 11</a
+              >
             </li>
           </ul>
         </address>
